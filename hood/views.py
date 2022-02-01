@@ -3,9 +3,9 @@ from django.http import HttpResponse
 # Create your views here.
 
 def login(request):
-    return HttpResponse('<h1> hood login </h1>')
+    return render(request, 'hood/login.html')
 
 def home(request):
-    return HttpResponse('<h1> hood home </h1>')
+    return render(request, 'hood/home.html', {'title': 'Watch'})
 
  
